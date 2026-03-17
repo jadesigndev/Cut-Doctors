@@ -1,4 +1,4 @@
-import { Phone } from 'lucide-react'
+import { Phone, ExternalLink } from 'lucide-react'
 
 export default function BookingCTA() {
   return (
@@ -15,20 +15,26 @@ export default function BookingCTA() {
           Book Your Cut Today
         </h2>
         <p className="font-inter text-base text-white/80 mb-8 max-w-lg mx-auto">
-          Walk-ins are always welcome. For guaranteed availability, call us or check in with your preferred booking app.
+          Book online with Booksy, call us, or walk in — we're ready for you.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="tel:+14072032836"
+            href="https://booksy.com/en-us/182701_cut-doctors_hair-salon_134763_orlando#ba_s=seo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-white text-barber-red hover:bg-cream font-inter font-bold text-base px-8 py-4 rounded transition-colors duration-150"
+          >
+            <ExternalLink className="w-5 h-5" />
+            Book on Booksy
+          </a>
+          <a
+            href="tel:+14072032836"
+            className="flex items-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white/10 font-inter font-bold text-base px-8 py-4 rounded transition-colors duration-150"
           >
             <Phone className="w-5 h-5" />
             Call to Book
           </a>
-          <div className="font-inter text-white/70 text-sm">
-            or walk in — we're ready for you
-          </div>
         </div>
 
         <p className="mt-6 font-mono text-sm text-white/50">

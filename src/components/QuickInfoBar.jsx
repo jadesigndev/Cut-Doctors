@@ -1,13 +1,13 @@
 import { MapPin, Phone, Clock } from 'lucide-react'
 
 const HOURS = [
-  { day: 'Monday', open: 11, close: 19, label: '11:00 AM – 7:00 PM' },
-  { day: 'Tuesday', open: 9, close: 19, label: '9:00 AM – 7:00 PM' },
-  { day: 'Wednesday', open: 9, close: 19, label: '9:00 AM – 7:00 PM' },
-  { day: 'Thursday', open: 9, close: 19, label: '9:00 AM – 7:00 PM' },
-  { day: 'Friday', open: 9, close: 19, label: '9:00 AM – 7:00 PM' },
-  { day: 'Saturday', open: 9, close: 17, label: '9:00 AM – 5:00 PM' },
-  { day: 'Sunday', open: null, close: null, label: 'Closed' },
+  { day: 'Monday', open: 9, close: 18, label: '9:00 AM – 6:00 PM' },
+  { day: 'Tuesday', open: 9, close: 18, label: '9:00 AM – 6:00 PM' },
+  { day: 'Wednesday', open: 9, close: 18, label: '9:00 AM – 6:00 PM' },
+  { day: 'Thursday', open: 9, close: 18, label: '9:00 AM – 6:00 PM' },
+  { day: 'Friday', open: 9, close: 18, label: '9:00 AM – 6:00 PM' },
+  { day: 'Saturday', open: 9, close: 18, label: '9:00 AM – 6:00 PM' },
+  { day: 'Sunday', open: 9, close: 18, label: '9:00 AM – 6:00 PM' },
 ]
 
 function getTodayHours() {
