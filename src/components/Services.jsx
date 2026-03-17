@@ -20,6 +20,7 @@ const serviceGroups = [
     services: [
       { icon: Droplets, name: 'Hot Towel Shave', description: 'The full ritual — steam, lather, straight razor', price: '$25+' },
       { icon: Scissors, name: 'Trimmer Shave', description: 'Clean, close, and comfortable', price: 'Included' },
+      { icon: Scissors, name: 'Haircut with Trimmer Shave', description: 'Full haircut paired with a clean trimmer shave finish', price: '$25' },
       { icon: Star, name: 'Haircut + Hot Towel Shave + Eyebrows', description: 'The complete grooming combo', price: '$25' },
     ],
   },
@@ -128,6 +129,13 @@ export default function Services() {
           >
             Book Your Service
           </a>
+          <p className="mt-4 font-inter text-sm text-text-muted">
+            More services available.{' '}
+            <a href="tel:+14072032836" className="text-barber-red hover:underline font-medium">
+              Call (407) 203-2836
+            </a>{' '}
+            for details.
+          </p>
         </div>
 
       </div>
