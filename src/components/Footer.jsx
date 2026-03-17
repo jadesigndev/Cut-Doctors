@@ -1,21 +1,13 @@
 import { Instagram, Facebook, Phone, MapPin } from 'lucide-react'
 
 const HOURS_SIMPLE = [
-  { day: 'Mon', label: '11am–7pm' },
-  { day: 'Tue–Fri', label: '9am–7pm' },
-  { day: 'Sat', label: '9am–5pm' },
-  { day: 'Sun', label: 'Closed' },
+  { day: 'Mon–Sun', label: '9am–6pm' },
 ]
 
 function isOpenNow() {
   const now = new Date()
   const h = now.getHours() + now.getMinutes() / 60
-  const day = now.getDay()
-  if (day === 0) return false
-  if (day === 1) return h >= 11 && h < 19
-  if (day >= 2 && day <= 5) return h >= 9 && h < 19
-  if (day === 6) return h >= 9 && h < 17
-  return false
+  return h >= 9 && h < 18
 }
 
 function CutDoctorsLogoSmall() {

@@ -20,8 +20,8 @@ export default function App() {
         <Services />
         <Gallery />
         <BarberPoleStory />
-        <Contact />
         <BookingCTA />
+        <Contact />
       </main>
       <Footer />
     </>
